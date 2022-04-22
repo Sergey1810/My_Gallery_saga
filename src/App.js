@@ -1,9 +1,9 @@
 import React from 'react'
 import Header from "./components/Header";
-import HomePage from "./page/HomePage";
+import HomePage from "./page/HomePage/HomePage";
 import {Route, Routes} from 'react-router-dom'
-import About from "./page/About";
-import PhotoInfo from "./page/PhotoInfo";
+import About from "./page/About/About";
+import PhotoInfo from "./page/PhotoInfo/PhotoInfo";
 
 
 function App() {
@@ -13,7 +13,6 @@ function App() {
             <Routes>
                 <Route path='/' element={<HomePage/>}/>
                     <Route path='/:id' element={<PhotoInfo/>}/>
-
                 <Route path='/about' element={<About/>}/>
             </Routes>
 

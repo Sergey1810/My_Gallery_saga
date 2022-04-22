@@ -1,0 +1,13 @@
+.content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.img{
+    justify-self: center;
+    margin-top: 5px;
+    margin-right: 0px;
+}
+.title{
+    justify-self: start;
+    margin: 5px;
+}

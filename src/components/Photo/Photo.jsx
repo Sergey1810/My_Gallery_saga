@@ -10,7 +10,7 @@ const Photo = ({photos}) => {
     }
 
     return (
-        <Col className="mt-3">
+        <Col className='mt-3 d-flex justify-content-center'>
             <div className={cl.hover__effect__btn}>
                 <img src={photos.url} alt="" className={cl.photo}/>
                 <div className={cl.overlay}></div>
