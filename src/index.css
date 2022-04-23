@@ -26,3 +26,8 @@ code {
   text-decoration: none;
   color: dimgrey;
 }
+.futer{
+  position: fixed;
+  height : 50px;
+  bottom : 0;
+}
