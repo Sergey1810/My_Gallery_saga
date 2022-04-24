@@ -3,10 +3,14 @@ import axios from "axios";
 import {getPhotoSuccess} from "../photoSlise";
 
 function* workGetPhotoFetch(){
-    const photo = yield call(()=> axios.get('https://jsonplaceholder.typicode.com/albums/1/photos'))
-    //const photoShortened = yield photo.json();
-    const photoShortened = photo.data.slice(0,24);
-    yield put(getPhotoSuccess(photoShortened))
+    try {
+        const photo = yield call(()=> axios.get('https://jsonplaceholder.typicode.com/albums/1/photos'))
+        const photoShortened = photo.data.slice(0,24);
+        yield put(getPhotoSuccess(photoShortened))
+    }catch (e){
+        console.log(e)
+    }
+
 }
 
 function* photoSaga(){

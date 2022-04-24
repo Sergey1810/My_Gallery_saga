@@ -2,10 +2,10 @@ import React from 'react';
 
 const Futer = () => {
     return (
-        <div className=''>
+        <div className='futer'>
             <div>
                 <div className='d-flex justify-content-center '>
-                    <div className='fs-10' style={{color: 'darkgrey'}}>
+                    <div className='fs-10 mt-2' style={{color: 'darkgrey'}}>
                         Sergey Lisovcev
                     </div>
                 </div>

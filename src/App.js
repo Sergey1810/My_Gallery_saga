@@ -16,7 +16,7 @@ function App() {
                 <Route path='/:id' element={<PhotoInfo/>}/>
                 <Route path='/about' element={<About/>}/>
             </Routes>
-
+            <Futer/>
         </div>
     );
 }

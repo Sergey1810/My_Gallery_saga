@@ -5,6 +5,7 @@ export const photoSlise = createSlice({
     initialState:{
         photo:[],
         isLoading: false,
+        error:''
     },
     reducers:{
         getPhotoFetch:(state) => {
@@ -13,9 +14,11 @@ export const photoSlise = createSlice({
         getPhotoSuccess:(state, action) =>{
             state.photo = action.payload;
             state.isLoading = false;
+            state.error= '';
         },
-        getPhotoFailure:(state)=>{
+        getPhotoFailure:(state,action)=>{
             state.isLoading = false;
+            state.error = action.payload;
         }
     }
 });
